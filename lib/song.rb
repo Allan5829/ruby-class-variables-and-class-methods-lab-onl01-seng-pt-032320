@@ -56,9 +56,7 @@ class Song
   end 
   
   def self.artist_count
-        if (temp_array_1.include? (unique))
-        temp_count += 1 
-      end  
+    
   end 
   
 end 
