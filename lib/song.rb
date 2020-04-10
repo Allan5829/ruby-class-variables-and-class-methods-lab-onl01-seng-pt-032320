@@ -48,9 +48,7 @@ class Song
       end 
     end
     @@genres.each do |unique|
-      if (temp_array_1.include? (unique))
-        temp_count += 1 
-      end
+      temp_count = @@genres.count (unique)
       hash_1 ["#{unique}"] = temp_count
       temp_count = 0
     end 
@@ -58,7 +56,9 @@ class Song
   end 
   
   def self.artist_count
-    
+        if (temp_array_1.include? (unique))
+        temp_count += 1 
+      end  
   end 
   
 end 
