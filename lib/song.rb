@@ -38,4 +38,13 @@ class Song
     temp_array_2
   end 
   
+  def self.genre_count
+    hash_1 = {}
+    
+  end 
+  
+  def self.artist_count
+    
+  end 
+  
 end 
