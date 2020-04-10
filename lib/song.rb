@@ -18,7 +18,9 @@ class Song
   def self.genres 
     temp_array_1 = []
     @@genres.each do |unique|
-      
+      if !(temp_array_1.include? (unique))
+        temp_array_1 << unique
+      end 
     end 
     temp_array_1
   end
