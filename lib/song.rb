@@ -50,7 +50,7 @@ class Song
       if (temp_array_1.include? (unique))
         number += 1 
       end
-      hash_1 
+      hash_1 ["#{unique}"] = 
     end 
     hash_1
   end 
