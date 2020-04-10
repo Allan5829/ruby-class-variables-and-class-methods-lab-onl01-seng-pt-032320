@@ -52,6 +52,7 @@ class Song
         temp_count += 1 
       end
       hash_1 ["#{unique}"] = temp_count
+      temp_count = 0
     end 
     hash_1
   end 
