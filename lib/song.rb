@@ -27,8 +27,12 @@ class Song
   
   def self.artists
     temp_array_2 = []
+    @@artists.each do |unique|
+      if !(temp_array_2.include? (unique))
+        temp_array_2 << unique
+      end 
+    end 
+    temp_array_2
   end 
   
 end 
-    if !(@@genres.include? (genre))
-    if !(@@artists.include? (artist))
