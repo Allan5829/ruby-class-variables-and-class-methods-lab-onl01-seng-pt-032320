@@ -40,7 +40,6 @@ class Song
   
   def self.genre_count
     hash_1 = {}
-    temp_array_1 = []
     temp_count = 0
     @@genres.each do |unique|
       temp_count = @@genres.count (unique)
@@ -52,7 +51,6 @@ class Song
   
   def self.artist_count
     hash_2 = {}
-    temp_array_2 = []
     temp_count = 0
     @@artists.each do |unique|
       temp_count = @@artists.count (unique)
