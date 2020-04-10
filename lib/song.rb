@@ -56,7 +56,20 @@ class Song
   end 
   
   def self.artist_count
-    
+    hash_2 = {}
+    temp_array_2 = []
+    temp_count = 0
+    @@artists.each do |unique|
+      if !(temp_array_2.include? (unique))
+        temp_array_2 << unique
+      end 
+    end
+    @@artists.each do |unique|
+      temp_count = @@artists.count (unique)
+      hash_1 ["#{unique}"] = temp_count
+      temp_count = 0
+    end 
+    hash_2
   end 
   
 end 
