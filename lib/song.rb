@@ -43,11 +43,6 @@ class Song
     temp_array_1 = []
     temp_count = 0
     @@genres.each do |unique|
-      if !(temp_array_1.include? (unique))
-        temp_array_1 << unique
-      end 
-    end
-    @@genres.each do |unique|
       temp_count = @@genres.count (unique)
       hash_1 ["#{unique}"] = temp_count
       temp_count = 0
