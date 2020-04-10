@@ -47,10 +47,11 @@ class Song
       end 
     end
     @@genres.each do |unique, number|
+      temp_count = 0
       if (temp_array_1.include? (unique))
-        number += 1 
+        temp_count = temp_count + number 
       end
-      hash_1 ["#{unique}"] = number
+      hash_1 ["#{unique}"] = temp_count
     end 
     hash_1
   end 
