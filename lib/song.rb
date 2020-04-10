@@ -66,7 +66,7 @@ class Song
     end
     @@artists.each do |unique|
       temp_count = @@artists.count (unique)
-      hash_1 ["#{unique}"] = temp_count
+      hash_2 ["#{unique}"] = temp_count
       temp_count = 0
     end 
     hash_2
