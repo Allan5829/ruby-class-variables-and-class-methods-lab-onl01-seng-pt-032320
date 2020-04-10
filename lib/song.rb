@@ -41,7 +41,11 @@ class Song
   def self.genre_count
     hash_1 = {}
     temp_array_1 = 0 
-    
+    @@genres.each do |unique|
+      if !(temp_array_1.include? (unique))
+        temp_array_1 << unique
+      end 
+    end 
     hash_1
   end 
   
