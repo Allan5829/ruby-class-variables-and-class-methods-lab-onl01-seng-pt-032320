@@ -16,13 +16,17 @@ class Song
   end 
   
   def self.genres 
-    @@genres  
+    temp_array_1 = []
+    @@genres.each do |unique|
+      
+    end 
+    temp_array_1
   end
   
   def self.artists
-    @@artists
+    temp_array_2 = []
   end 
   
 end 
     if !(@@genres.include? (genre))
-     if !(@@artists.include? (artist))
+    if !(@@artists.include? (artist))
